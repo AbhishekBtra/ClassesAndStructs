@@ -76,9 +76,11 @@ namespace ClassesNStructs
         {
 
             Program p = new Program();
-            p.RefEquivalenceCheck();
-            p.ValEquivalenceCheck();
-            p.CheckReferenceEqual();
+            //p.RefEquivalenceCheck();
+            //p.ValEquivalenceCheck();
+            //p.CheckReferenceEqual();
+            BoxUnbox ob = new BoxUnbox();
+            ob.BoxSomething();
             Console.ReadKey();
 
         }
