@@ -42,6 +42,22 @@ namespace ClassesNStructs
             as well as any unique instance of String
             you add programmatically by calling the Intern method.*/
 
+
+
+        }
+
+        public void CheckRefernceEquivalence()
+        {
+            string s1 = "abc";
+            string s2 = "abc";
+            string s3 = "abcd";
+            if (String.ReferenceEquals(s1,s2))  // ReferenceEquals is a static function, which makes sure that if a class has implemented its own copy of Equal func 
+                    //then we can use ReferenceEquals instead as it returns true if reference are same else false and cannot be overidden by class.
+                Console.WriteLine("Referecnce of strings s1 & s2 is equal s1(hashcode = {0}) and s2(hashcode = {1})",s1.GetHashCode(),s2.GetHashCode());
+            if (String.ReferenceEquals(s1, s3))
+                Console.WriteLine("Referecnce of strings s1 & s2 is equal s1(hashcode = {0}) and s2(hashcode = {1})", s1.GetHashCode(), s2.GetHashCode());
+            else
+                Console.WriteLine("Referecnce of strings s1 & s2 is not equal s1(hashcode = {0}) and s3(hashcode = {1})", s1.GetHashCode(), s3.GetHashCode());
         }
     }
 }

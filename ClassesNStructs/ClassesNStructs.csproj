@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69DAD50F-340B-4C34-B450-942D4EAEE2A0}</ProjectGuid>
+    <ProjectGuid>{573C5D03-1AC9-4BB0-A5CB-EA6304F059FB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClassesNStructs</RootNamespace>
@@ -43,14 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
-    <Compile Include="ClassBox.cs" />
-    <Compile Include="DerivedClass.cs" />
-    <Compile Include="Numbers.cs" />
+    <Compile Include="BoxClass.cs" />
+    <Compile Include="BoxUnbox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringEquivalence.cs" />
-    <Compile Include="ValueTypeEquivalenceClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
