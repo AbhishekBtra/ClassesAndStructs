@@ -80,7 +80,8 @@ namespace ClassesNStructs
             //p.ValEquivalenceCheck();
             //p.CheckReferenceEqual();
             BoxUnbox ob = new BoxUnbox();
-            ob.BoxSomething();
+            //ob.BoxSomething();
+            ob.UnBoxSomething();
             Console.ReadKey();
 
         }
