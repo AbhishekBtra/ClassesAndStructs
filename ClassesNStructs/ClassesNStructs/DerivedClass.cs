@@ -8,14 +8,19 @@ namespace ClassesNStructs
 {
     class DerivedClass : BaseClass
     {
-
-        public override int CalcVolume()
+        
+        public override int CalcVolume(int d)
         {
 
            
             //Console.WriteLine("Base classs volume = {0}", base.CalcVolume());
             return 1 * 2 * 3;
 
+        }
+
+        public int CalcVolume(double a)
+        {
+            return 1;
         }
 
         public int CalArea()

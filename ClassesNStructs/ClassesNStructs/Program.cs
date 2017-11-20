@@ -58,19 +58,19 @@ namespace ClassesNStructs
             BaseClass bobj = new BaseClass();
 
             //obj = (DerivedClass)bobj;//Runtime Error - no compile time error cause of explicit casting
-            Console.WriteLine("Derived class vol = {0}", obj.CalcVolume());
-            Console.WriteLine("Base class vol = {0}", bobj.CalcVolume());
+            Console.WriteLine("Derived class vol = {0}", obj.CalcVolume(5));
+            Console.WriteLine("Base class vol = {0}", bobj.CalcVolume(10));
             Console.WriteLine("Derived class area = {0}", obj.CalArea());
             Console.WriteLine("Base class area = {0}", bobj.CalArea());
             bobj = (BaseClass)obj;
             Console.WriteLine("WITH VIRTUAL FEATURE -START\n");
-            Console.WriteLine("Derived class vol = {0}", obj.CalcVolume());
-            Console.WriteLine("Base class vol = {0}", bobj.CalcVolume());
+            Console.WriteLine("Derived class vol = {0}", obj.CalcVolume(5));
+            Console.WriteLine("Base class vol = {0}", bobj.CalcVolume(10));
             Console.WriteLine("WITH VIRTUAL FEATURE -END\n");
-            Console.WriteLine("WITH NEW FEATURE -START\n");
+            Console.WriteLine("WITHout NEW FEATURE -START\n");
             Console.WriteLine("Derived class area = {0}", obj.CalArea());
             Console.WriteLine("Base class area = {0}", bobj.CalArea());
-            Console.WriteLine("WITH NEW FEATURE -END\n");
+            Console.WriteLine("WITHout NEW FEATURE -END\n");
             int area2 = obj.CalArea2();
              Console.WriteLine("Derived class area2 = {0}", obj.CalArea2());
             Console.WriteLine("Base class area2 = {0}", bobj.CalArea2());

@@ -17,7 +17,7 @@ namespace ClassesNStructs
             z = 10;
         }
 
-        public virtual int CalcVolume()
+        public virtual int CalcVolume(int d)
         {
             int vol;
             return vol = x*y*z;
@@ -35,6 +35,10 @@ namespace ClassesNStructs
             return x + y * z;
         }
 
+        public  int CalArea3()
+        {
+            return x + y * z;
+        }
 
 
     }
